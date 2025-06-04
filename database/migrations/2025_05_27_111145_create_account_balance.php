@@ -18,6 +18,7 @@ return new class extends Migration {
             $table->decimal('total_bonus', 30, 2)->default(0.00);
             $table->decimal('total_profit', 30, 2)->default(0.00);
             $table->string('currency')->default('$');
+            $table->decimal('deposit', 30, 2)->default(0.00);
             $table->timestamps();
         });
     }

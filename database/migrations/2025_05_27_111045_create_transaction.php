@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->decimal('amount', 30, 2);
             $table->string('status', 20)->default('pending');
             $table->string('payment_mode');
-            $table->string('currency');
+            $table->string('currency')->default('$');
 
             $table->timestamps();
         });
