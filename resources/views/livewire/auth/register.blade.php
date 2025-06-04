@@ -17,7 +17,7 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
     public string $password = '';
     public string $password_confirmation = '';
     public string $username = '';
-    public string $country = '';
+    // public string $country = '';
     public string $phone = '';
     public string $gender = '';
     // public string $account_type = '';
@@ -31,7 +31,7 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'string', 'confirmed', Rules\Password::defaults()],
-            'country' => ['required', 'string', 'max:255'],
+            // 'country' => ['required', 'string', 'max:255'],
             'username' => [
                 'required',
                 'string',
@@ -54,7 +54,8 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
             $account_profile = AccountProfile::create([
                 'user_id' => $user->id,
                 'username' => $validated['username'],
-                'country' => $validated['country'],
+                'country' => '',
+                // 'country' => $validated['country'],
                 'phone' => $validated['phone'],
                 'gender' => $validated['gender'],
             ]);
@@ -188,7 +189,7 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
                                             <div class="form-group text-start">
                                                 <div class="row">
                                                     {{-- --}}
-                                                    <div class="col-lg-6">
+                                                    <div class="col-lg-16">
                                                         <div class="mb-3">
                                                             <label class="tx-medium">
                                                                 Gender
@@ -207,7 +208,7 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
                                                         </div>
                                                     </div>
                                                     {{-- --}}
-                                                    <div class="col-lg-6">
+                                                    {{-- <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label class="tx-medium">
                                                                 Country
@@ -225,7 +226,7 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
                                                             </select>
                                                             <x-form-status name="country" />
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                             </div>
                                             {{-- --}}
