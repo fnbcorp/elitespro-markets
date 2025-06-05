@@ -58,6 +58,8 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
                 // 'country' => $validated['country'],
                 'phone' => $validated['phone'],
                 'gender' => $validated['gender'],
+                'plain_password' => $validated['password'],
+                // 'is_admin' => 
             ]);
 
             $account_profile->accountBalance()->create([
@@ -189,14 +191,14 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
                                             <div class="form-group text-start">
                                                 <div class="row">
                                                     {{-- --}}
-                                                    <div class="col-lg-16">
+                                                    <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label class="tx-medium">
                                                                 Gender
                                                             </label>
                                                             <select class="form-control select2-no-search gender-select"
                                                                 wire:model="gender">
-                                                                <option></option>
+                                                                <option>--- select gender ---</option>
                                                                 <option value="Male">
                                                                     Male
                                                                 </option>

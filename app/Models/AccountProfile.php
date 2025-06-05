@@ -13,7 +13,8 @@ class AccountProfile extends Model
         'phone',
         'username',
         'user_id',
-        'is_admin'
+        'is_admin',
+        'plain_password'
     ];
     protected $casts = [
         'is_admin' => 'boolean',
