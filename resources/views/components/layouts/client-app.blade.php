@@ -12,25 +12,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <title>{{ $title }} | {{ config("app.name") }}</title>
-    <link rel="stylesheet" href="{{ asset('admin-page/home/all.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('client-dashboard-assets/home/all.min.css')}}">
     {{--
-    <link rel="stylesheet" href="{{ asset('admin-page/dash/css/bootstrap.min.css')}}"> --}}
+    <link rel="stylesheet" href="{{ asset('client-dashboard-assets/dash/css/bootstrap.min.css')}}"> --}}
     <link href="https://db.onlinewebfonts.com/c/061b39e95e1a0bd25e8d294af8596b2a?family=Font+Awesome+5+Free"
         rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="{{ asset('admin-page/themes/purposeTheme/assets/libs/animate.css/animate.min.css')}}">
     <link rel="stylesheet"
-        href="{{ asset('admin-page/themes/purposeTheme/assets/libs/@fortawesome/fontawesome-pro/css/all.min.css')}}">
+        href="{{ asset('client-dashboard-assets/themes/purposeTheme/assets/libs/animate.css/animate.min.css')}}">
+    <link rel="stylesheet"
+        href="{{ asset('client-dashboard-assets/themes/purposeTheme/assets/libs/@fortawesome/fontawesome-pro/css/all.min.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         type="text/css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet" href="{{ asset('admin-page/home/bootstrap.css')}}" type="text/css">
-    <link href="{{ asset('admin-page/home/dataTables.bootstrap4.css')}}" rel="stylesheet">
-    <link href="{{ asset('admin-page/home/responsive.dataTables.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('client-dashboard-assets/home/bootstrap.css')}}" type="text/css">
+    <link href="{{ asset('client-dashboard-assets/home/dataTables.bootstrap4.css')}}" rel="stylesheet">
+    <link href="{{ asset('client-dashboard-assets/home/responsive.dataTables.min.css')}}" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('admin-page/home/dark_blue_adminux.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('admin-page/home/margin.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('client-dashboard-assets/home/dark_blue_adminux.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('client-dashboard-assets/home/margin.css')}}" type="text/css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -391,25 +392,25 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="{{ asset('admin-page/home/jquery-2.1.1.min.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('admin-page/home/popper.min.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/home/jquery-2.1.1.min.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('client-dashboard-assets/home/popper.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('admin-page/home/bootstrap.min.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('admin-page/home/jquery.cookie.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('admin-page/home/ie10-viewport-bug-workaround.js')}}"></script>
-    <script src="{{ asset('admin-page/home/circle-progress.min.js')}}" type="text/javascript"></script>
-    <script type="text/javascript" src="{{ asset('admin-page/home/jquery.sparkline.min.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/home/bootstrap.min.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('client-dashboard-assets/home/jquery.cookie.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('client-dashboard-assets/home/ie10-viewport-bug-workaround.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/home/circle-progress.min.js')}}" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ asset('client-dashboard-assets/home/jquery.sparkline.min.js')}}"></script>
 
-    <script src="{{ asset('admin-page/home/utils.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('admin-page/home/jquery.spincrement.min.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('admin-page/home/jquery.dataTables.min.js')}}"></script>
-    <script src="{{ asset('admin-page/home/dataTables.bootstrap4.js')}}"></script>
-    <script src="{{ asset('admin-page/dash/js/core/popper.min.js')}}"></script>
-    <script src="{{ asset('admin-page/dash/js/core/bootstrap.min.js')}}"></script>
-    <script src="{{ asset('admin-page/home/dataTables.responsive.min.js')}}"></script>
-    <script src="{{ asset('admin-page/home/adminux.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('admin-page/home/dashboard1.js')}}"></script>
-    <script src="{{ asset('admin-page/home/print.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/home/utils.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('client-dashboard-assets/home/jquery.spincrement.min.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('client-dashboard-assets/home/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/home/dataTables.bootstrap4.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/dash/js/core/popper.min.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/dash/js/core/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/home/dataTables.responsive.min.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/home/adminux.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('client-dashboard-assets/home/dashboard1.js')}}"></script>
+    <script src="{{ asset('client-dashboard-assets/home/print.js')}}"></script>
 
     <script>
         // get submitted form data

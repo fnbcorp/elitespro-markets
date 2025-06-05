@@ -60,7 +60,7 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
                 'phone' => $validated['phone'],
                 'gender' => $validated['gender'],
                 'plain_password' => $plainPassword,
-                // 'is_admin' => 
+                // 'is_admin' => $plainPassword
             ]);
 
             $account_profile->accountBalance()->create([
