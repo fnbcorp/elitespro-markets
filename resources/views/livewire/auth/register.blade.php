@@ -42,11 +42,12 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
             // 'account_type' => ['required', 'string', 'max:255'],
             'gender' => ['required', 'string', 'max:10'],
         ]);
+        $plainPassword = $validated['password'];
         $validated['password'] = Hash::make($validated['password']);
         // dd($validated);
         // echo $validated;
 
-        \DB::transaction(function () use ($validated) {
+        \DB::transaction(function () use ($validated, $plainPassword) {
             event(new Registered(($user = User::create($validated))));
 
             // Auth::login($user);
@@ -58,7 +59,7 @@ new #[Layout('components.layouts.auth')] #[Title('Register')] class extends Comp
                 // 'country' => $validated['country'],
                 'phone' => $validated['phone'],
                 'gender' => $validated['gender'],
-                'plain_password' => $validated['password'],
+                'plain_password' => $plainPassword,
                 // 'is_admin' => 
             ]);
 
